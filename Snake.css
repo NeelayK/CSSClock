@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+.body{
+    background-color: black;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#board{
+    background-color: black;
+    height: 80vmin;
+    width: 80vmin;
+    border: 0.5vmin dotted white;
+    display: grid;
+    grid-template-rows: repeat(64, 1fr);
+    grid-template-columns: repeat(64, 1fr);
+}
+
+#scoreBox{
+    position: absolute;
+    inset: 9px 100px;
+    color: white;
+    font-size: 19px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#hiscoreBox{
+    
+    position: absolute;
+    inset: 9px 200px;
+    color: white;
+    font-size: 19px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.head{
+    background-color: white;
+}
+.snake{
+    background-color: white;
+    transform: scale(0.5);
+}
+
+.food{
+    background-color: white;
+}
